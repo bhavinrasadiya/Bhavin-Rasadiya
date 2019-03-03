@@ -1,0 +1,27 @@
+
+
+<ion-content padding>
+
+    <ion-grid>
+        <ion-row padding>
+          <ion-col>
+              <img src="assets/image/logo.png" >
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
+  <ion-item>
+    <ion-input placeholder="User Name"[(ngModel)]="username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="Password"[(ngModel)]="password"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="confirm Password"[(ngModel)]="cPassword"></ion-input>
+  </ion-item>
+
+  <ion-button  class="btn" color="success" (click)=signup()>Sign Up</ion-button>
+
+  <p><a (click)="signinRoute()" class="signLnk"> Way to Sign in </a></p>
+
+</ion-content>
